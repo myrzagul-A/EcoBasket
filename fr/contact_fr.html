@@ -1,0 +1,233 @@
+<!--Developed by: Louis, Liutsiia, Myrzagul-->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="../style/style.css">
+   <!-- <link rel="stylesheet" href="../style/contact_style.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <title>Contacts | EcoBasket</title>
+</head>
+
+<body>
+    <!-- Nav and Banner-->
+    <section class="p-5 bg-black about_banner">
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-default nav_cust">
+                <div class="container">
+                 <div class="col-xl-4 col-md-3 col-sm-12">
+                    <div class="block">
+                        <img  class="navbar-brand" src="../images/eco-basket-logo-small.jpg" alt="ECO-BASKET"/>
+                     </div>
+                 </div>
+                 <div class="col-xl-5 col-md-8 col-sm-11">
+                     <div class="block">
+                        <ul class=" navbar__nav">
+                            <li class="active">
+                              <a class="nav__link" href="home_fr.html">ACCUEIL</a>
+                            </li>
+                            <li>
+                                <a class="nav__link" href="FR-About-us.html">À-PROPOS</a>
+                            </li>
+                            <li>
+                                <a class="current__link" href="#">CONTACTS</a>
+                            </li>
+                          </ul>
+                     </div>
+                 </div>
+                 <div class="col-xl-3 col-md-1 col-sm-1 text-right">
+                     <div class="block">
+                        <a class="nav navbar navbar-right language__link float-right" href="../contact.html">ENG</a>
+                     </div>
+                 </div>
+            </div>
+        </nav>
+        <div class="row my-5"></div>
+            <div class="row my-5">
+                <div class="container-fluid mb-4">
+                    <div class="banner-content mt-5">
+                        <h1 class="text-center text-white pb-1 mb-1">Contactez-nous</h1>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--Contact Info Container Starts Here-->
+    <div class="p-5 bg-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card bg-white scaleOnHover">
+                        <div class="card-body text-center p-5">
+                            <i class="bi bi-phone text-success h1"></i>
+                            <p class="info_text pseudoLine">+1 123-456-7890</p>
+                            <p class="info_text">+1 123-987-6543</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card bg-white scaleOnHover">
+                        <div class="card-body text-center p-5">
+                            <i class="bi bi-house text-success h1"></i>
+                            <p class="info_text pseudoLine"> 4730 rue Maple, </p>
+                            <p class="info_text">Saint-Denis, CQ A1A1A1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card bg-white scaleOnHover">
+                        <div class="card-body text-center p-5">
+                            <i class="bi bi-chat-dots text-success h1"></i>
+                            <p class="info_text pseudoLine">personal@email.com</p>
+                            <p class="info_text">info@email.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="p-5 bg-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="container col-lg-5 col-md-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.1455682747755!2d-73.94391688444449!3d45.40640407910029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc938500caad3a7%3A0xd807d74a59dcffcf!2sJohn%20Abbott%20College!5e0!3m2!1sen!2sca!4v1651085803854!5m2!1sen!2sca"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+                <div class="form col-lg-6 col-md-12">
+                    <form>
+                        <fieldset>
+                            <div class="row g-2 my-1">
+                                <h1>Formulaire de Contact</h1>
+
+                                <div class="form-floating g-2 col-md">
+                                    <input type="text" class="form-control bg-light" id="firstName"
+                                        placeholder="Prénom" maxlength="20">
+                                    <label for="firstName">Prénom</label>
+                                </div>
+                                <div class="form-floating g-2 col-md">
+                                    <input type="text" class="form-control bg-light" id="lastName"
+                                        placeholder="Nom" maxlength="20">
+                                    <label for="lastName">Nom</label>
+                                </div>
+                            </div>
+                            <div class="row g-2 my-1">
+                                <div class="form-floating g-2">
+                                    <input type="text" class="form-control bg-light" id="email" placeholder="Email" maxlength="20">
+                                    <label for="email">E-mail</label>
+                                </div>
+                            </div>
+                            <div class="row g-2 my-1">
+                                <div class="form-floating g-2">
+                                    <textarea name="message" id="message" cols="30" rows="10"
+                                        class="form-control bg-light" placeholder="Écrivez-nous un message" maxlength="200"></textarea>
+                                    <label for="message">Écrivez-nous un message</label>
+                                </div>
+                            </div>
+                            <div class="row g-2 my-1">
+                                <div class="input-group g-2">
+                                    <button class="btn btn-success btn-lg btn-block send_message"
+                                        type="submit">Envoyer</button>
+                                    <!-- <i class="bi bi-check text-success h1 confirm"></i> -->
+                                </div>
+
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <footer class="footer row justify-content-center gy-3">
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="block_footer">
+                    <img  class="navbar-brand" src="../images/eco-basket-logo-small.jpg" alt="ECO-BASKET"/>
+                    <p class="footer__text">Ecobasket est une ferme du Québec. Nous offront des produits santé pour nos clients.</p>
+                    <div class="contacts__text">
+                       <div>
+                           <i class="contacts__icon fa fa-phone">
+                         </i> <a class="contacts_link" href="#tel">+1 323-913-4688</a>
+                       </div>
+                        <div>
+                            <i class="contacts__icon fa fa-clock-o"></i>
+                        <span class="contacts__text">Lun-Sam: 07:00AM - 05:00PM</span>
+                        </div>
+
+                        <div><i class="contacts__icon fa fa-location-arrow"></i> <a class="contacts_link" href="#">4730 Maple, Saint-Denis, CQ A1A1A1</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="block_footer">
+                    <h5 class="footer__header">Bulletin</h5>
+                    <p class="footer__text2">Incrivez-vous à notre bulletin électronique.</p>
+                    <input class="footer-input" type="email" placeholder="Entrer votre E-mail" >
+                   <button class="footer__button" type="submit">Inscrivez-moi</button>
+                   <div>
+                       <span class="contacts__text">Média-Sociaux</span>
+                       <a class="contacts_link icon fa fa-facebook" href="#"></a>
+                       <a class="contacts_link icon fa fa-twitter" href="#"></a>
+                       <a class="contacts_link icon fa fa-google-plus" href="#"></a>
+                       <a class="contacts_link icon fa fa-instagram" href="#"></a>
+                   </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="block_footer photo-gallery-footer">
+                    <h5 class="footer__header">Gallerie</h5>
+                        <div class="row footer_photos gy-3 align-items-left">
+                        <div class="col-md-6 footer__item"><a href="../images/Gallery1.jpg" data-lightbox="photos"><img class="img-fluid" src="../images/Gallery1.jpg"  alt="Photo"></a></div>
+                        <div class=" col-md-6 item"><a href="../images/Gallery2.jpg" data-lightbox="photos"><img class="img-fluid" src="../images/Gallery2.jpg"  alt="Photo"></a></div>
+                    </div>
+                    <div class="row photos gy-3">
+                        <div class="col-md-6 item"><a href="../images/Gallery11.jpg" data-lightbox="photos"><img class="img-fluid" src="../images/Gallery11.jpg"  alt="Photo"></a></div>
+                        <div class=" col-md-6 item"><a href="../images/Gallery12.jpg" data-lightbox="photos"><img class="img-fluid" src="../images/Gallery12.jpg"  alt="Photo"></a></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer_black gy-3">
+                   <div class="container-fluid">
+                    <p class="rights">© Eco-Basket. Tout droit Réservé. Développé par Louis, Myrzagul, Liutsiia </p>
+
+                    </div>
+                </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/cad92e1b18.js" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>
