@@ -1,0 +1,404 @@
+<!-- Team: Ecobasket -->
+<!-- Members: Liustiia Ahmedgalieva, Ling Tao, Louis Dumas-Véronneau, Myrzagul Aidaralieva -->
+<!-- Contact page lead: Louis -->
+<!-- 2022/05/17 -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style/style.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- link to show-user script-->
+    <script src="js/show-user.js"></script>
+
+    <!-- link to show-user css-->
+    <link rel="stylesheet" href="style/show-user.css">
+
+    <!-- link to JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <title>Contacts | EcoBasket</title>
+</head>
+
+<body>
+    <!-- Nav and Banner-->
+    <div class="p-5 bg-black about_banner">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-default nav_cust">
+                    <div class="container">
+                        <div class="xol-xl-4 col-md-3 col-sm-12">
+                            <div class="block">
+                                <img class="navbar-brand" src="images/eco-basket-logo-small.jpg" alt="ECO-BASKET" />
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-md-8 col-sm-10">
+                            <div class="block">
+                                <ul class=" navbar__nav">
+                                    <li class="active">
+                                        <a class="nav__link text-nowrap" href="home.html">HOME</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__link" href="store.html" id="store">STORE</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__link text-nowrap" href="About-us.html">ABOUT US</a>
+                                    </li>
+                                    <li>
+                                        <a class="current__link text-nowrap" href="#">CONTACT US</a>
+                                    </li>
+                                    <!-- add store -->
+                                    
+                                    <li>
+                                        <a class="nav__link" href="login.html" id="login">SIGN IN</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a class="nav_link navbar-right language__link float-right"
+                                        href="fr/contact_fr.html">FR</a>
+                                    </li> -->
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- show user section-->
+            <div id="user-container" style="display: flex;">
+                <!--
+                <p style="width:10rem">Welcome Ling</p>
+                <button style="width:5rem">Log Out</button>
+                -->
+
+            </div>
+                    <div class=" col-md-1 col-sm-1 text-right">
+                        <a class="nav navbar navbar-right language__link float-right" href="fr/contact_fr.html">FR</a>
+
+                    </div>
+                </nav>
+            </div>
+            <div class="row my-5"></div>
+            <div class="row my-5">
+                <div class="container-fluid mb-4">
+                    <div class="banner-content mt-5">
+                        <h1 class="text-center text-white pb-1 mb-1">Contact Us</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact Info Container Starts Here-->
+    <div class="p-5 bg-white">
+
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card bg-white scaleOnHover">
+                        <div class="card-body text-center p-5">
+                            <i class="bi bi-phone text-success h1"></i>
+                            <p class="info_text pseudoLine">+1 123-456-7890</p>
+                            <p class="info_text">+1 123-987-6543</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card bg-white scaleOnHover">
+                        <div class="card-body text-center p-5">
+                            <i class="bi bi-house text-success h1"></i>
+                            <p class="info_text pseudoLine">4730 Maple Street, </p>
+                            <p class="info_text">Saint-Denis, CQ A1A1A1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card bg-white scaleOnHover">
+                        <div class="card-body text-center p-5">
+                            <i class="bi bi-chat-dots text-success h1"></i>
+                            <p class="info_text pseudoLine">personal@email.com</p>
+                            <p class="info_text">info@email.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="p-5 bg-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="container-fluid col-lg-6 col-md-12">
+                    <div id="map"></div>
+                </div>
+                <div class="form col-lg-6 col-md-12">
+                    <form id="contactForm">
+                        <fieldset>
+                            <div class="row g-2 my-1">
+                                <h2>Contact Form</h2>
+
+                                <div class="form-floating g-2 col-md">
+                                    <input type="text" class="form-control bg-light" name="firstName" id="firstName"
+                                        placeholder="First Name" maxlength="20" required>
+                                    <label id="firstNameL" for="firstName">First Name</label>
+                                </div>
+                                <div class="form-floating g-2 col-md">
+                                    <input type="text" class="form-control bg-light" name="lastName" id="lastName"
+                                        placeholder="Last Name" maxlength="20" required>
+                                    <label id="lastNameL" for="lastName">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row g-2 my-1">
+                                <div class="form-floating g-2">
+                                    <input type="email" class="form-control bg-light" name="email" id="email" placeholder="Email"
+                                        maxlength="20" required>
+                                    <label id="emailL" for="email">E-mail</label>
+                                </div>
+                            </div>
+                            <div class="row g-2 my-1">
+                                
+                                    <select class="form-select bg-light py-3" name="subject" id="subject" aria-label="reasons" required>
+                                        <option selected disabled value="">What is this about?</option>
+                                        <option value="Deliveries">Deliveries</option>
+                                        <option value="Products">Products</option>
+                                        <option value="General">General Comments</option>
+                                      </select>
+                                
+                            </div>
+                            <div class="row g-2 my-1">
+                                <div class="form-floating g-2">
+                                    <textarea name="message" id="message" cols="30" rows="10"
+                                        class="form-control bg-light" placeholder="Send us a Message"
+                                        maxlength="200" required></textarea>
+                                    <label id="messageL" for="message">Send us a message</label>
+                                </div>
+                            </div>
+                            <div class="row g-2 my-1">
+                                <div class="input-group g-2">
+                                    <button id='sButton' class="btn btn-success btn-lg btn-block send_message" type="submit">Send
+                                        Message</button>
+                                </div>
+
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <footer class="footer row justify-content-center gy-3">
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="block_footer">
+                    <img class="navbar-brand" src="images/eco-basket-logo-small.jpg" alt="ECO-BASKET" />
+                    <p class="footer__text">EcoBasket is an organic farm located in Quebec. We offer healthy foods and
+                        products to our clients.</p>
+                    <div class="contacts__text">
+                        <div>
+                            <i class="contacts__icon fa fa-phone">
+                            </i> <a class="contacts_link" href="#tel">+1 323-913-4688</a>
+                        </div>
+                        <div>
+                            <i class="contacts__icon fa fa-clock-o"></i>
+                            <span class="contacts__text">Mon-Sat: 07:00AM - 05:00PM</span>
+                        </div>
+
+                        <div><i class="contacts__icon fa fa-location-arrow"></i> <a class="contacts_link" href="#">4730
+                                Maple, Saint-Denis, CQ A1A1A1</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="block_footer">
+                    <h5 class="footer__header">Newsletter</h5>
+                    <p class="footer__text2">Join our email newsletter for news and tips.</p>
+                    <input class="footer-input" type="email" placeholder="Enter Your E-mail">
+                    <button class="footer__button" type="submit">Subscribe</button>
+                    <div>
+                        <span class="contacts__text">Follow Us</span>
+                        <a class="contacts_link icon fa fa-facebook" href="#"></a>
+                        <a class="contacts_link icon fa fa-twitter" href="#"></a>
+                        <a class="contacts_link icon fa fa-google-plus" href="#"></a>
+                        <a class="contacts_link icon fa fa-instagram" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="block_footer photo-gallery-footer">
+                    <h5 class="footer__header">Gallery</h5>
+                    <div class="row footer_photos gy-3 align-items-left">
+                        <div class="col-md-6 footer__item"><a href="images/Gallery1.jpg" data-lightbox="photos"><img
+                                    class="img-fluid" src="images/Gallery1.jpg" alt="Photo"></a></div>
+                        <div class=" col-md-6 item"><a href="images/Gallery2.jpg" data-lightbox="photos"><img
+                                    class="img-fluid" src="images/Gallery2.jpg" alt="Photo"></a></div>
+                    </div>
+                    <div class="row photos gy-3">
+                        <div class="col-md-6 item"><a href="images/Gallery11.jpg" data-lightbox="photos"><img
+                                    class="img-fluid" src="images/Gallery11.jpg" alt="Photo"></a></div>
+                        <div class=" col-md-6 item"><a href="images/Gallery12.jpg" data-lightbox="photos"><img
+                                    class="img-fluid" src="images/Gallery12.jpg" alt="Photo"></a></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer_black gy-3">
+                <div class="container-fluid">
+                    <p class="rights">© Eco-Basket. All rights reserved. Developed by Louis, Myrzagul, Liutsiia and Ling </p>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/cad92e1b18.js" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- <script src="scripts/contact.js"></script> -->
+
+    <script>
+        function initMap() {
+          var test= {lat: 45.40647555401569, lng: -73.94173769930921};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: test
+          });
+          var marker = new google.maps.Marker({
+            position: test,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src=
+  "https://maps.googleapis.com/maps/api/js?key=AIzaSyCdRzmxFGs93qxf0mTi_uJWO4MK84yX-ks&callback=initMap">
+    </script>
+
+    <script>
+        
+
+    let sbutton = document.getElementById('sButton');
+    sbutton.addEventListener('click', msgValidation);
+
+    function msgValidation(event) {
+        
+
+        let firstName = document.getElementById('firstName');
+        let lastName = document.getElementById('lastName');
+        let email = document.getElementById('email');
+        let subject = document.getElementById('subject');
+        let message = document.getElementById('message');
+        let allgood = 0;
+
+        if (firstName.value === '') {
+
+            document.getElementById('firstNameL').classList.add('red_label');
+
+            document.getElementById('firstNameL').innerHTML = 'First Name Required';
+        } else {
+            document.getElementById('firstNameL').classList.remove('red_label');
+
+            document.getElementById('firstNameL').innerHTML = 'First Name';
+            allgood += 1;
+        }
+        
+        if (lastName.value === '') {
+
+            document.getElementById('lastNameL').classList.add('red_label');
+
+            document.getElementById('lastNameL').innerHTML = 'Last Name Required';
+        } else {
+            document.getElementById('lastNameL').classList.remove('red_label');
+
+            document.getElementById('lastNameL').innerHTML = 'Last Name';
+            allgood += 1;
+        } 
+        
+        if (email.value === '') {
+
+            document.getElementById('emailL').classList.add('red_label');
+
+            document.getElementById('emailL').innerHTML = 'Email Required';
+        } else {
+            document.getElementById('emailL').classList.remove('red_label');
+
+            document.getElementById('emailL').innerHTML = 'Email';
+            allgood += 1;
+        } 
+        
+        if (subject.selectedIndex === 0) {
+
+            document.getElementById('subject').classList.add('red_label');
+        } else {
+            document.getElementById('subject').classList.remove('red_label');
+            allgood += 1;
+        } 
+        
+        if (message.value === '') {
+
+            document.getElementById('messageL').classList.add('red_label');
+
+            document.getElementById('messageL').innerHTML = 'Please write us something!';
+
+        } else {
+            document.getElementById('messageL').classList.remove('red_label');
+
+            document.getElementById('messageL').innerHTML = 'Message';
+            allgood += 1;
+        }
+
+        
+        if (allgood === 5) {
+            sbutton.innerHTML = 'Message Sent. We will contact you shortly!';
+           
+        } else {
+            event.preventDefault();  
+        }
+          
+
+        
+    }
+    
+    function handleSubmit(event) {
+        event.preventDefault();
+
+        const data = new FormData(event.target);
+
+        const value = Object.fromEntries(data.entries());
+
+        console.log({ value });
+        console.log(JSON.stringify(value));
+    }
+        const form = document.querySelector('form');
+        form.addEventListener('submit', handleSubmit);
+
+    </script>
+</body>
+
+</html>

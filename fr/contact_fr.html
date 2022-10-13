@@ -1,4 +1,7 @@
-<!--Developed by: Louis, Liutsiia, Myrzagul-->
+<!-- Team: Ecobasket -->
+<!-- Members: Liustiia Ahmedgalieva, Ling Tao, Louis Dumas-Véronneau, Myrzagul Aidaralieva -->
+<!-- Contact page lead: Louis -->
+<!-- 2022/05/17 -->
 
 <!doctype html>
 <html lang="fr">
@@ -17,7 +20,15 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+      <!-- link to show-user script-->
+      <script src="js/show-user.js"></script>
 
+      <!-- link to show-user css-->
+      <link rel="stylesheet" href="../style/show-user.css">
+  
+      <!-- link to JQuery-->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Contacts | EcoBasket</title>
 </head>
 
@@ -32,22 +43,40 @@
                         <img  class="navbar-brand" src="../images/eco-basket-logo-small.jpg" alt="ECO-BASKET"/>
                      </div>
                  </div>
-                 <div class="col-xl-5 col-md-8 col-sm-11">
+                 <div class="col-xl-7 col-md-8 col-sm-11">
                      <div class="block">
                         <ul class=" navbar__nav">
                             <li class="active">
                               <a class="nav__link" href="home_fr.html">ACCUEIL</a>
                             </li>
                             <li>
-                                <a class="nav__link" href="FR-About-us.html">À-PROPOS</a>
+                                <a class="nav__link" href="shop_fr.html" id="store">MAGASIN</a>
+                            </li>
+                            <li>
+                                <a class="nav__link text-nowrap" href="FR-About-us.html">À-PROPOS</a>
                             </li>
                             <li>
                                 <a class="current__link" href="#">CONTACTS</a>
                             </li>
+                            <!-- add store -->
+                            
+                            <!-- add sign in -->
+                            <li>
+                                <a class="nav__link" href="login_fr.html" id="login">CONNECTION</a>
+                            </li>
                           </ul>
                      </div>
                  </div>
-                 <div class="col-xl-3 col-md-1 col-sm-1 text-right">
+
+                 <!-- show user section-->
+            <div id="user-container" style="display: flex;">
+                <!--
+                <p style="width:10rem">Welcome Ling</p>
+                <button style="width:5rem">Log Out</button>
+                -->
+
+            </div>
+                 <div class="col-md-1 col-sm-1 text-right">
                      <div class="block">
                         <a class="nav navbar navbar-right language__link float-right" href="../contact.html">ENG</a>
                      </div>
@@ -103,48 +132,54 @@
     <section class="p-5 bg-white">
         <div class="container">
             <div class="row g-4">
-                <div class="container col-lg-5 col-md-12">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.1455682747755!2d-73.94391688444449!3d45.40640407910029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc938500caad3a7%3A0xd807d74a59dcffcf!2sJohn%20Abbott%20College!5e0!3m2!1sen!2sca!4v1651085803854!5m2!1sen!2sca"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
+                <div class="container-fluid col-lg-6 col-md-12">
+                    <div id="map"></div>
                 </div>
                 <div class="form col-lg-6 col-md-12">
-                    <form>
+                    <form id="contactForm">
                         <fieldset>
                             <div class="row g-2 my-1">
-                                <h1>Formulaire de Contact</h1>
+                                <h2>Contactez-nous</h2>
 
                                 <div class="form-floating g-2 col-md">
-                                    <input type="text" class="form-control bg-light" id="firstName"
-                                        placeholder="Prénom" maxlength="20">
-                                    <label for="firstName">Prénom</label>
+                                    <input type="text" class="form-control bg-light" name="firstName" id="firstName"
+                                        placeholder="First Name" maxlength="20" required>
+                                    <label id="firstNameL" for="firstName">Prénom</label>
                                 </div>
                                 <div class="form-floating g-2 col-md">
-                                    <input type="text" class="form-control bg-light" id="lastName"
-                                        placeholder="Nom" maxlength="20">
-                                    <label for="lastName">Nom</label>
+                                    <input type="text" class="form-control bg-light" name="lastName" id="lastName"
+                                        placeholder="Last Name" maxlength="20" required>
+                                    <label id="lastNameL" for="lastName">Nom</label>
                                 </div>
                             </div>
                             <div class="row g-2 my-1">
                                 <div class="form-floating g-2">
-                                    <input type="text" class="form-control bg-light" id="email" placeholder="Email" maxlength="20">
-                                    <label for="email">E-mail</label>
+                                    <input type="email" class="form-control bg-light" name="email" id="email" placeholder="Email"
+                                        maxlength="20" required>
+                                    <label id="emailL" for="email">E-mail</label>
                                 </div>
+                            </div>
+                            <div class="row g-2 my-1">
+                                
+                                    <select class="form-select bg-light py-3" name="subject" id="subject" aria-label="reasons" required>
+                                        <option selected disabled value="">Choisisez un sujet</option>
+                                        <option value="Deliveries">Livraisons</option>
+                                        <option value="Products">Produits</option>
+                                        <option value="General">Autres Commentaires</option>
+                                      </select>
+                                
                             </div>
                             <div class="row g-2 my-1">
                                 <div class="form-floating g-2">
                                     <textarea name="message" id="message" cols="30" rows="10"
-                                        class="form-control bg-light" placeholder="Écrivez-nous un message" maxlength="200"></textarea>
-                                    <label for="message">Écrivez-nous un message</label>
+                                        class="form-control bg-light" placeholder="Send us a Message"
+                                        maxlength="200" required></textarea>
+                                    <label id="messageL" for="message">Écrivez-nous ici!</label>
                                 </div>
                             </div>
                             <div class="row g-2 my-1">
                                 <div class="input-group g-2">
-                                    <button class="btn btn-success btn-lg btn-block send_message"
-                                        type="submit">Envoyer</button>
-                                    <!-- <i class="bi bi-check text-success h1 confirm"></i> -->
+                                    <button id='sButton' class="btn btn-success btn-lg btn-block send_message" type="submit">Envoyer</button>
                                 </div>
 
                             </div>
@@ -206,7 +241,7 @@
             </div>
             <div class="footer_black gy-3">
                    <div class="container-fluid">
-                    <p class="rights">© Eco-Basket. Tout droit Réservé. Développé par Louis, Myrzagul, Liutsiia </p>
+                    <p class="rights">© Eco-Basket. Tout droit Réservé. Développé par Louis, Myrzagul, Liutsiia, Ling </p>
 
                     </div>
                 </div>
@@ -220,14 +255,133 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-    <!-- Font Awesome-->
+
     <script src="https://kit.fontawesome.com/cad92e1b18.js" crossorigin="anonymous"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    <script src="scripts/jquery-3.6.0.js"></script>
+    <script src="scripts/contact.js"></script>
 
+    <script>
+        function initMap() {
+          var test= {lat: 45.40647555401569, lng: -73.94173769930921};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: test
+          });
+          var marker = new google.maps.Marker({
+            position: test,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src=
+  "https://maps.googleapis.com/maps/api/js?key=AIzaSyCdRzmxFGs93qxf0mTi_uJWO4MK84yX-ks&region=CAN&language=fr&callback=initMap">
+    </script>
+
+    <script>
+        
+
+    let sbutton = document.getElementById('sButton');
+    sbutton.addEventListener('click', msgValidation);
+
+    function msgValidation(event) {
+        
+
+        let firstName = document.getElementById('firstName');
+        let lastName = document.getElementById('lastName');
+        let email = document.getElementById('email');
+        let subject = document.getElementById('subject');
+        let message = document.getElementById('message');
+        let allgood = 0;
+
+        if (firstName.value === '') {
+
+            document.getElementById('firstNameL').classList.add('red_label');
+
+            document.getElementById('firstNameL').innerHTML = 'Prénom Requis';
+        } else {
+            document.getElementById('firstNameL').classList.remove('red_label');
+
+            document.getElementById('firstNameL').innerHTML = 'Prénom';
+            allgood += 1;
+        }
+        
+        if (lastName.value === '') {
+
+            document.getElementById('lastNameL').classList.add('red_label');
+
+            document.getElementById('lastNameL').innerHTML = 'Nom Requis';
+        } else {
+            document.getElementById('lastNameL').classList.remove('red_label');
+
+            document.getElementById('lastNameL').innerHTML = 'Nom';
+            allgood += 1;
+        } 
+        
+        if (email.value === '') {
+
+            document.getElementById('emailL').classList.add('red_label');
+
+            document.getElementById('emailL').innerHTML = 'Email Requis';
+        } else {
+            document.getElementById('emailL').classList.remove('red_label');
+
+            document.getElementById('emailL').innerHTML = 'Email';
+            allgood += 1;
+        } 
+        
+        if (subject.selectedIndex === 0) {
+
+            document.getElementById('subject').classList.add('red_label');
+        } else {
+            document.getElementById('subject').classList.remove('red_label');
+            allgood += 1;
+        } 
+        
+        if (message.value === '') {
+
+            document.getElementById('messageL').classList.add('red_label');
+
+            document.getElementById('messageL').innerHTML = 'Vous devez formuler un message!';
+
+        } else {
+            document.getElementById('messageL').classList.remove('red_label');
+
+            document.getElementById('messageL').innerHTML = 'Message';
+            allgood += 1;
+        }
+
+        
+        if (allgood === 5) {
+            sbutton.innerHTML = 'Message Envoyé. Nous vous contacterons sous peu!';
+           
+        } else {
+            event.preventDefault();  
+        }
+          
+
+        
+    }
+    
+    function handleSubmit(event) {
+        event.preventDefault();
+
+        const data = new FormData(event.target);
+
+        const value = Object.fromEntries(data.entries());
+
+        console.log({ value });
+        console.log(JSON.stringify(value));
+    }
+        const form = document.querySelector('form');
+        form.addEventListener('submit', handleSubmit);
+
+    </script>
 </body>
 
 </html>

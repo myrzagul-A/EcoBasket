@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cad92e1b18.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- link to show-user script-->
+    <script src="js/show-user.js"></script>
+
+    <!-- link to show-user css-->
+    <link rel="stylesheet" href="style/show-user.css">
+
+    <!-- link to JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <title>Eco-Basket</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-default nav_cust">
+        <div class="container">
+            <div class="xol-xl-4 col-md-3 col-sm-12">
+                <div class="block">
+                    <img class="navbar-brand" src="images/eco-basket-logo-small.jpg" alt="ECO-BASKET" />
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-9 col-sm-11">
+                <div class="block">
+                    <ul class=" navbar__nav">
+                        <li class="active">
+                            <a class="current__link text-nowrap " href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a class="nav__link text-nowrap" href="store.html" id="store">STORE</a>
+                        </li>
+                        <li>
+                            <a class="nav__link text-nowrap" href="About-us.html">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a class="nav__link text-nowrap" href="contact.html">CONTACT US</a>
+                        </li>
+                        <!-- add store -->
+
+                        <!-- add sign in -->
+                        <li>
+                            <a class="nav__link text-nowrap" href="login.html" id="login">SIGN IN</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- show user section-->
+            <div id="user-container" style="display: flex;">
+                <!--
+                <p style="width:10rem">Welcome Ling</p>
+                <button style="width:5rem">Log Out</button>
+                -->
+
+            </div>
+
+
+
+            <!-- delete class= col-xl-3 in first div for some place for welcome infromation-->
+            <div class="col-md-1 col-sm-1 text-right">
+                <!-- the div above-->
+
+
+                <div class="block">
+                    <a id="check-lang" class="nav navbar navbar-right language__link float-right"
+                        href="fr/home_fr.html">FR</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <section class="intro row">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/intro.jpg" class="d-block w-100" alt="slide 1">
+                        <div class="carousel-caption">
+                            <h5 class="intro__title">Organic Food</h5>
+                            <p class="intro__subtitle">Eco-basket provides local citizens and guests of our town with
+                                quality organic fruits, vegetables, and other products.</p>
+                            <a class="btn_cust" href="#">READ MORE</a>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/intro2.jpg" class="d-block w-100" alt="slide 2">
+                        <div class="carousel-caption ">
+                            <h5 class="intro__title">Quality Control</h5>
+                            <p class="intro__subtitle">We control the process of farming at Eco-Basket to deliver the
+                                best organic products to our customers throughout the state.</p>
+                            <a class="btn_cust" href="#">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/intro3.jpg" class="d-block w-100" alt="slide 3">
+                        <div class="carousel-caption">
+                            <h5 class="intro__title">Eco-Friendly</h5>
+                            <p class="intro__subtitle">As the leading organic farm, we maintain an eco-friendly policy
+                                of growing and selling healthy food without any additives.</p>
+                            <a class="btn_cust" href="#">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </div>
+    <section class="container">
+        <h2 class=" text-center intro__title black__title">Our Baskets</h2>
+        <div class="product row gy-3">
+            <div class="col-lg-4 col-sm-6">
+                <div class="block">
+                    <div class="product_img">
+                        <img src="images/AllNaturalEssential.png" alt="All Natural Essential">
+                        <div class="product__discription">
+                            <p>1 Carrots (Bunch), 2 Apples (each), 2 Navel (each), 2 Pear (each),1 Cucumber (each), 1
+                                Onion (each), 2 Tomatoes (each), 1 Kale (Bunch),1 Russett Potato (each)</p>
+                        </div>
+                    </div>
+                    <h3 class="product__title">All Natural Essential Basket</h3>
+                    <p class="price"><s>$49.00</s> $38.00</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="block">
+                    <div class="product_img">
+                        <img src="images/Only_Organic_Small_Box.png" alt="Only Organic Small Box">
+                        <div class="product__discription">
+                            <p>1 Carrots, Organic (Bunch), 1 Avocado, Organic (each), 2 Navel, Organic (each), 2 Pear,
+                                Organic (each), 1 Cucumber, Organic (each), 1 Sweet Pepper, Organic (Bunch), 1 Zucchini,
+                                Organic (each), 2 Tomatoes, Organic (each), 1 Kale, Organic (Bunch), 1 Russett Potato,
+                                Organic (each)</p>
+                        </div>
+                    </div>
+                    <h3 class="product__title">Only Organic Small Basket</h3>
+                    <p class="price">$47.00</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="block">
+                    <div class="product_img">
+                        <img src="images/Only_Organic_Medium_Box.png" alt="Only Organic Medium Box">
+                        <div class="product__discription">
+                            <p>1 Carrots, Organic (Bunch), 3 Apples, Organic (each), 1 Avocado, Organic (each), 3 Navel,
+                                Organic (each), 3 Pear, Organic (each), 1 Brussels Sprouts, Organic, 1 Cucumber, Organic
+                                (each), 1 Sweet Pepper, Organic (Bunch), 2 Zucchini, Organic (each), 1 Sweet Potatoes ,
+                                Organic (each), 2 Tomatoes, Organic (each), 1 Kale, Organic (Bunch), 1 Russett Potato,
+                                Organic (each)</p>
+                        </div>
+                    </div>
+                    <h3 class="product__title">Only Organic Medium Basket</h3>
+                    <p class="price">$63.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="product row gy-3">
+            <div class="col-lg-4 col-sm-6">
+                <div class="block">
+                    <div class="product_img">
+                        <img src="images/OnlyOrganicLargeBox.png" alt="Only Organic Large Box">
+                        <div class="product__discription">
+                            <p>1 Carrots, Organic (Bunch), 3 Apples, 2 Avocado, Organic (each), 1 Grapefruit, Organic
+                                (each), 4 Navel, Organic (each), 4 Pear, Organic (each), 1 Brussels Sprouts, Organic, 2
+                                Cucumber, Organic (each), 1 Onion, Organic (each), 2 Sweet Pepper, Organic (Bunch), 2
+                                Zucchini, Organic (each),1 Sweet Potatoes , Organic (each), 3 Tomatoes, Organic (each),
+                                1 Kale, Organic (Bunch), 2 Russett Potato, Organic (each)</p>
+                        </div>
+                    </div>
+                    <h3 class="product__title">Only Organic Large Basket</h3>
+                    <p class="price"> $75.00</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="block">
+                    <div class="product_img">
+                        <img src="images/All_Natural_Diabetic_Friendly_Box.png" alt="All Natural Diabetic Friendly Box">
+                        <div class="product__discription">
+                            <p>1 Carrots (Bunch), 3 Apples (each), 3 Navel (each), 3 Pear (each), 1 Onion (each), 1 Kale
+                                (Bunch), 1 Lettuce (each), 1 Green Pepper (each)</p>
+                        </div>
+                    </div>
+
+                    <h3 class="product__title">All Natural Diabetic Friendly Basket</h3>
+                    <p class="price">$39.00</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="block">
+                    <div class="product_img">
+                        <img src="images/All_Natural_Medium_Box.png" alt="All Natural Medium Box">
+                        <div class="product__discription">
+                            <p>1 Carrots (Bunch), 2 Apples (each), 1 Avocado (each), 3 Pear (each), 1 Cucumber (each), 1
+                                Sweet Pepper (Bunch), 2 Zucchini (each), 3 Tomatoes (each), 3 Kiwi (each), 2 Russett
+                                Potato (each), 1 Lettuce (each)</p>
+                        </div>
+                    </div>
+                    <h3 class="product__title">All Natural Medium Basket</h3>
+                    <p class="price">$53.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="product row gy-3">
+            <div class="col-lg-4 col-sm-6">
+                <div class="block">
+                    <div class="product_img">
+                        <img src="images/Juice_Basket_Small.png" alt="Juice Basket Small">
+                        <div class="product__discription">
+                            <p>1 Carrots (Bunch), 2 Apples (each), 2 Pear (each), 1 Cucumber (each), 2 Kiwi (each)</p>
+                        </div>
+                    </div>
+                    <h3 class="product__title">Juice Basket Small</h3>
+                    <p class="price"> $36.00</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="block">
+                    <div class="product_img">
+                        <img src="images/Juice_Basket_Medium.png" alt="Juice Basket Medium">
+                        <div class="product__discription">
+                            <p>1 Carrots (Bunch), 2 Apples (each), 1 Avocado (each), 3 Pear (each), 1 Cucumber (each), 3
+                                Kiwi (each), 4 Navel (each)</p>
+                        </div>
+                    </div>
+                    <h3 class="product__title">Juice Basket Medium</h3>
+                    <p class="price">$66.00</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="block">
+                    <div class="product_img">
+                        <img src="images/Juice_Basket_Large.png" alt="Juice Basket Large">
+                        <div class="product__discription">
+                            <p>1 Carrots (Bunch), 4 Apples (each), 1 Avocado (each), 4 Pear (each), 2 Cucumber (each), 4
+                                Kiwi (each), 5 Navel (each), 1 Grapefruit (each), 2 Beets (each), 1 Kale (Bunch)</p>
+                        </div>
+                    </div>
+                    <h3 class="product__title">Juice Basket Large</h3>
+                    <p class="price">$69.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid">
+        <section class="presentation row">
+            <div class="col-12 presentation__inner">
+                <h2 class="intro__title text-center">Our Approach</h2>
+                <h3 class="intro__subtitle text-center">Our farm strictly combines the traditions of organic farming
+                    with the latest innovations to make our products healthy and safe for the clients.</h3>
+                <a class="btn_cust" target="_blank" href="https://www.youtube.com/watch?v=cqPYgDyyARU">View
+                    presentation</a>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="team row  justify-content-center gy-3">
+            <h2 class=" text-center intro__title black__title">Our Team</h2>
+            <div class=" col-xl-4 col-lg-6 col-sm-12">
+                <div class="block">
+                    <div class="team__img">
+                        <img src="images/team1.jpg" alt="Team member 1">
+                        <div class="team__text">
+                            <h4 class="team_name">Katy Wilson</h4>
+                            <p>Founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4  col-lg-6 col-sm-12">
+                <div class="block">
+                    <div class="team__img">
+                        <img src="images/team2.jpg" alt="Team member 2">
+                        <div class="team__text">
+                            <h4 class="team_name">Sam Robinson</h4>
+                            <p>Garden Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-sm-12">
+                <div class="block">
+                    <div class="team__img">
+                        <img src="images/team3.jpg" alt="Team member 3">
+                        <div class="team__text">
+                            <h4 class="team_name">Jill Peterson</h4>
+                            <p>Farmyard Coordinator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+                <h1 class=" text-center intro__title black__title">Our Gallery</h1>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-3 item">
+                    <a href="images/Gallery1.jpg" data-lightbox="photos">
+                        <img class="img-fluid" src="images/Gallery1.jpg" alt="Photo">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <a href="images/Gallery2.jpg" data-lightbox="photos">
+                        <img class="img-fluid" src="images/Gallery2.jpg" alt="Photo">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <a href="images/Gallery3.jpg" data-lightbox="photos">
+                        <img class="img-fluid" src="images/Gallery3.jpg" alt="Photo">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <a href="images/Gallery4.jpg" data-lightbox="photos">
+                        <img class="img-fluid" src="images/Gallery4.jpg" alt="Photo">
+                    </a>
+                </div>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-3 item">
+                    <a href="images/Gallery5.jpg" data-lightbox="photos">
+                        <img class="img-fluid" src="images/Gallery5.jpg" alt="Photo">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <a href="images/Gallery6.jpg" data-lightbox="photos">
+                        <img class="img-fluid" src="images/Gallery6.jpg" alt="Photo">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <a href="images/Gallery7.jpg" data-lightbox="photos">
+                        <img class="img-fluid" src="images/Gallery7.jpg" alt="Photo">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <a href="images/Gallery8.jpg" data-lightbox="photos">
+                        <img class="img-fluid" src="images/Gallery8.jpg" alt="Photo">
+                    </a>
+                </div>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-3 item">
+                    <a href="images/Gallery9.jpg" data-lightbox="photos">
+                        <img class="img-fluid" src="images/Gallery9.jpg" alt="Photo">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <a href="images/Gallery10.jpg" data-lightbox="photos">
+                        <img class="img-fluid" src="images/Gallery10.jpg" alt="Photo">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <a href="images/Gallery11.jpg" data-lightbox="photos">
+                        <img class="img-fluid" src="images/Gallery11.jpg" alt="Photo">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <a href="images/Gallery12.jpg" data-lightbox="photos">
+                        <img class="img-fluid" src="images/Gallery12.jpg" alt="Photo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid">
+        <footer class="footer row justify-content-center gy-3">
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="block_footer">
+                    <img class="navbar-brand" src="images/eco-basket-logo-small.jpg" alt="ECO-BASKET" />
+                    <p class="footer__text">Eco-Basket is an organic farm located in Quebec. We offer healthy foods and
+                        products to our clients.</p>
+                    <div class="contacts__text">
+                        <div>
+                            <i class="contacts__icon fa fa-phone"></i> <a class="contacts_link" href="#tel">+1
+                                323-913-4688</a>
+                        </div>
+                        <div>
+                            <i class="contacts__icon fa fa-clock-o"></i>
+                            <span class="contacts__text">Mon-Sat: 07:00AM - 05:00PM</span>
+                        </div>
+                        <div>
+                            <i class="contacts__icon fa fa-location-arrow"></i> <a class="contacts_link" href="#">4730
+                                Maple, Saint-Denis, CQ A1A1A1</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="block_footer">
+                    <h5 class="footer__header">Newsletter</h5>
+                    <p class="footer__text2">Join our email newsletter for news and tips.</p>
+                    <input class="footer-input" type="email" placeholder="Enter Your E-mail">
+                    <button class="footer__button" type="submit">Subscribe</button>
+                    <div>
+                        <span class="contacts__text">Follow Us </span>
+                        <a class="contacts_link icon fa fa-facebook" href="#"></a>
+                        <a class="contacts_link icon fa fa-twitter" href="#"></a>
+                        <a class="contacts_link icon fa fa-google-plus" href="#"></a>
+                        <a class="contacts_link icon fa fa-instagram" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="block_footer photo-gallery-footer">
+                    <h5 class="footer__header">Gallery</h5>
+                    <div class="row footer_photos gy-3 align-items-left">
+                        <div class="col-md-6 footer__item">
+                            <a href="images/Gallery1.jpg" data-lightbox="photos">
+                                <img class="img-fluid" src="images/Gallery1.jpg" alt="Photo">
+                            </a>
+                        </div>
+                        <div class=" col-md-6 item">
+                            <a href="images/Gallery2.jpg" data-lightbox="photos">
+                                <img class="img-fluid" src="images/Gallery2.jpg" alt="Photo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row photos gy-3">
+                        <div class="col-md-6 item">
+                            <a href="images/Gallery11.jpg" data-lightbox="photos">
+                                <img class="img-fluid" src="images/Gallery11.jpg" alt="Photo">
+                            </a>
+                        </div>
+                        <div class=" col-md-6 item">
+                            <a href="images/Gallery12.jpg" data-lightbox="photos">
+                                <img class="img-fluid" src="images/Gallery12.jpg" alt="Photo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_black gy-3">
+                <div class="container-fluid">
+                    <p class="rights">© Eco-Basket. All rights reserved. Developed by Louis, Myrzagul, Liutsiia, Ling
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+</body>
+
+</html>

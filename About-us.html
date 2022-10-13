@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Us - EcoBasket</title>
+
+  <link rel="stylesheet" href="style/style_V3.css" />
+  <!-- <link rel="stylesheet" href="/Bootstrap/style/bootstrap.min.css"/>       -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <!-- link to show-user script-->
+    <script src="js/show-user.js"></script>
+
+    <!-- link to show-user css-->
+    <link rel="stylesheet" href="style/show-user.css">
+
+    <!-- link to JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <main>
+  <!--NAVIGATION -->
+  <section class="section1 banner p-1">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-default nav_cust">
+    <div class="container">
+      <div class="col-xl-4 col-md-3 col-sm-12">
+        <div class="block">
+          <img class="navbar-brand" src="images/eco-basket-logo-small.jpg" alt="ECO-BASKET" />
+        </div>
+      </div>
+      <div class="col-xl-5 col-md-8 col-sm-11">
+        <div class="block">
+          <ul class=" navbar__nav">
+            <li class="active">
+              <a class="nav__link text-nowrap" href="home.html">HOME</a>
+            </li>
+            <!-- add store -->
+            <li>
+              <a class="nav__link text-nowrap" href="store.html" id="store">STORE</a>
+            </li>
+            <li>
+              <a class="current__link  text-nowrap" href="#">ABOUT US</a>
+            </li>
+            <li>
+              <a class="nav__link text-nowrap" href="contact.html">CONTACT US</a>
+            </li>
+            
+            <!-- add sign in -->
+            <li>
+              <a class="nav__link text-nowrap" href="login.html" id="login">SIGN IN</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <!-- show user section-->
+      <div id="user-container" style="display: flex;">
+        <!--
+        <p style="width:10rem">Welcome Ling</p>
+        <button style="width:5rem">Log Out</button>
+        -->
+
+    </div>
+
+      <div class="col-md-1 col-sm-1 text-right">
+        <div class="block">
+          <a class="nav navbar navbar-right language__link float-right" href="fr/FR-About-us.html">FR</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+       <div class="container py-lg-5 py-md-4 py-sm-3 my-lg-5 my-md-4 my-sm-3">
+        <div class="banner-content pt-auto">
+            <h1 class="text-center text-white mt-auto p-5">About Our Farm</h1>
+        </div>
+    </div>
+    </section>
+    <!--END OF - BANNER - SECTION-1-->
+
+    <!--WHY CHOOSE US - SECTION-2-->
+    <section class="section2 bg-default text-md-left">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-5 col-xl-6">
+            <img src="images/telejka.jpeg" class="img-fluid" alt="Photo of a Field - AboutUs" width="519" height="446">
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-7 col-xl-6">
+                <h2 class="text-dark text-center">Why Choose Us</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="about-tabs">
+                  <ul class="nav nav-tabs justify-content-center align-items-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="goal-tab" data-bs-toggle="tab" data-bs-target="#goal"
+                        type="button" role="tab" aria-controls="goal" aria-selected="true">Our Goal</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission"
+                        type="button" role="tab" aria-controls="mission" aria-selected="false">Our Mission</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="values-tab" data-bs-toggle="tab" data-bs-target="#values"
+                        type="button" role="tab" aria-controls="values" aria-selected="false">Our Values</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content pt-5" id="myTabContent">
+                    <div class="tab-pane fade show active" id="goal" role="tabpanel" aria-labelledby="goal-tab">
+                      Eco-Basket
+                      ia team of professionlas with great experience and love for their work.
+                      <p>Our main goals are:</p>
+                      <ul>
+                        <li class="text-start">Providing Canadiens with genuine organic foods and products. </li>
+                        <li class="text-start">Strengthening the best natural, sustainable, organic, agriculture practices
+                          aimed at preserving the Nature surrounding us.</li>
+                        <li class="text-start">Creating a sustainable and prosperous business model that ensures
+                          outstanding service and integrity, and benefits everyone.</li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">To facilitate
+                      organic and sustainable agriculture, land care, and lifestyles in Canada by being a trustworthy
+                      and
+                      innovative leader in production of true organic and accessible products and solutions. Our
+                      products
+                      will cherish the nature surrounding us by safeguarding the natural ecosystem, farmers, and
+                      consumers.
+                    </div>
+
+                    <div class="tab-pane fade" id="values" role="tabpanel" aria-labelledby="values-tab">
+                      We believe in a future where sufficient food is produced safely, sustainably, and affordably. We
+                      stand
+                      firm for the use of renewable resources and the conservation of soil and water to enhance
+                      environmental quality for the future.</div>
+                    <div class="btn-section mt-5">
+                      <a href="#" class="btn btn_cust btn-sm me-5 ">Read more</a>
+                      <a href="#" class="btn btn_cust btn-sm me-5 ">Contacts</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END OF - WHY CHOOSE US - SECTION-2-->
+
+    <!--OUR HISTORY - SECTION-3-->
+    <section class="section3">
+      <div class="container-fluid ">
+        <div class="row ">
+          <div class="col-lg-12">
+            <div class="card ">
+              <div class="card-body justify-content-center align-items-center text-center ">
+                <h2 class="card-title mb-5">Our History</h2>
+
+                <div class="hist-timeline" dir="ltr">
+                  <ul class="list-inline events">
+                    <li class="list-inline-item event-list">
+                      <div class="px-2">
+                        <div class="event-date bg-soft-primary text-primary">2013</div>
+                        <h5 class="font-size-16">Establishment</h5>
+                        <img class="history-img1" src="images/establishment.jpeg" alt="history-image1">
+                        <p class="text-muted">Eco-Basket was established in 2013 by two brothers.</p>
+                        <div class="btn-section">
+                          <a href="#" class="btn btn_cust btn-sm">Read more</a>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="list-inline-item event-list">
+                      <div class="px-2">
+                        <div class="event-date bg-soft-danger text-danger">2015</div>
+                        <h5 class="font-size-16">Online Store</h5>
+                        <img class="history-img1" src="images/online-store.jpeg" alt="history-image2">
+                        <p class="text-muted">In 2015 Eco-Basket online store was launched</p>
+                        <div class="btn-section">
+                          <a href="#" class="btn btn_cust btn-sm">Read more</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-inline-item event-list">
+                      <div class="px-2">
+                        <div class="event-date bg-soft-warning text-warning">2018</div>
+                        <h5 class="font-size-16">Farming Industry Leader</h5>
+                        <img class="history-img1" src="images/leader2.jpeg" alt="history-image3">
+                        <p class="text-muted">Eco-Basket was acknowledged as the Farming Industry Leader.
+                        </p>
+                        <div class="btn-section">
+                          <a href="#" class="btn btn_cust btn-sm">Read more</a>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="list-inline-item event-list">
+                      <div class="px-2">
+                        <div class="event-date bg-soft-danger text-danger">2022</div>
+                        <h5 class="font-size-16">Farming Innovations</h5>
+                        <img class="history-img1" src="images/innovations.jpeg" alt="history-image4">
+                        <p class="text-muted">Progress does not stand still. This year some major farming innovations
+                          were introduced.</p>
+                        <div class="btn-section">
+                          <a href="#" class="btn btn_cust btn-sm">Read more</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end card -->
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--END OF - OUR HISTORY - SECTION-3-->
+
+    <!--WHAT PEOPLE SAY - SECTION-4-->
+    <section class="section4">
+      <div class="container-fluid cont-section4 justify-content-center">
+        <div class="row">
+          <!-- <div class="content text-center"> -->
+          <h2 class="section4-h2 text-light pt-3">What People Say</h2>
+          <!-- </div> -->
+          <div class="testimonial-view px-5">
+
+            <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!--Testimonial Client-->
+                <div class="carousel-item active">
+                  <div class="block-section4">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="user">
+                          <div class="image">
+                            <img src="images/man-standing1.png" alt="client1">
+                          </div>
+                          <div class="info">
+                            <h2 class="user-name">Mark Jones</h2>
+                            <h4>Client</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="content">
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eaque aspernatur vel, enim
+                            sequi culpa veritatis officia dolores quam voluptatum consequuntur nesciunt ipsa unde vitae.
+                            Quibusdam animi laudantium enim quo?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Testimonial Client2-->
+                <div class="carousel-item">
+                  <div class="block-section4">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="user">
+                          <div class="image">
+                            <img src="images/manstanding2.png" alt="client2">
+                          </div>
+                          <div class="info">
+                            <h2 class="user-name">SmithJones</h2>
+                            <h4>Client</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="content">
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eaque aspernatur vel, enim
+                            sequi culpa veritatis officia dolores quam voluptatum consequuntur nesciunt ipsa unde vitae.
+                            Quibusdam animi laudantium enim quo?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Testimonial Client3-->
+                <div class="carousel-item ">
+                  <div class="block-section4">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="user">
+                          <div class="image">
+                            <img src="images/manstanding3.png" alt="client3">
+                          </div>
+                          <div class="info">
+                            <h2 class="user-name">Hally Donald</h2>
+                            <h4>Client</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="content">
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eaque aspernatur vel, enim
+                            sequi culpa veritatis officia dolores quam voluptatum consequuntur nesciunt ipsa unde vitae.
+                            Quibusdam animi laudantium enim quo?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                       
+
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--END OF -WHAT PEOPLE SAY - SECTION-4-->
+
+    <!--OUR PARTNERS - SECTION-5-->
+    <section class="section5">
+
+      <div class="container-fluid mx-auto">
+        <div class="row justify-content-center text-center">
+          <h2 class="section5-h2 text-dark pb-5 ">Our Partners</h2>
+        </div>
+
+        <div class="row mx-auto text-center">
+          <div class="col p-2">
+            <img src="images/costco.png" alt="partner1">
+          </div>
+          <div class="col p-2">
+            <img src="images/walmart.jpg" alt="partner2">
+          </div>
+          <div class="col p-2">
+            <img src="images/Co-op-partners-warehouse.png" alt="partner3">
+          </div>
+          <div class="col p-2">
+            <img src="images/whole-foods-market.png" alt="partner4">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--END OF - OUR PARTNERS - SECTION-5-->
+
+  </main>
+  <!--FOOTER-->
+  <div class="container-fluid">
+    <footer class="footer row justify-content-center gy-3">
+      <div class="col-xl-4 col-md-6 col-sm-12">
+        <div class="block_footer">
+          <img class="navbar-brand" src="images/eco-basket-logo-small.jpg" alt="ECO-BASKET" />
+          <p class="footer__text">Eco-Basket is an organic farm located in Quebec. We offer healthy foods and products
+            to
+            our clients.</p>
+          <div class="contacts__text">
+            <div>
+              <i class="contacts__icon fa fa-phone">
+              </i> <a class="contacts_link" href="#tel">+1 323-913-4688</a>
+            </div>
+            <div>
+              <i class="contacts__icon fa fa-clock-o"></i>
+              <span class="contacts__text">Mon-Sat: 07:00AM - 05:00PM</span>
+            </div>
+
+            <div><i class="contacts__icon fa fa-location-arrow"></i> <a class="contacts_link" href="#">4730 Maple,
+                Saint-Denis, CQ A1A1A1</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6 col-sm-12">
+        <div class="block_footer">
+          <h5 class="footer__header">Newsletter</h5>
+          <p class="footer__text2">Join our email newsletter for news and tips.</p>
+          <input class="footer-input" type="email" placeholder="Enter Your E-mail">
+          <button class="footer__button" type="submit">Subscribe</button>
+          <div>
+            <span class="contacts__text">Follow Us </span>
+            <a class="contacts_link icon fa fa-facebook" href="#"></a>
+            <a class="contacts_link icon fa fa-twitter" href="#"></a>
+            <a class="contacts_link icon fa fa-google-plus" href="#"></a>
+            <a class="contacts_link icon fa fa-instagram" href="#"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6 col-sm-12">
+        <div class="block_footer photo-gallery-footer">
+          <h5 class="footer__header">Gallery</h5>
+          <div class="row footer_photos gy-3 align-items-left">
+            <div class="col-md-6 footer__item"><a href="images/Gallery1.jpg" data-lightbox="photos"><img
+                  class="img-fluid" src="images/Gallery1.jpg" alt="Photo"></a></div>
+            <div class=" col-md-6 item"><a href="images/Gallery2.jpg" data-lightbox="photos"><img class="img-fluid"
+                  src="images/Gallery2.jpg" alt="Photo"></a></div>
+          </div>
+          <div class="row photos gy-3">
+            <div class="col-md-6 item"><a href="images/Gallery11.jpg" data-lightbox="photos"><img class="img-fluid"
+                  src="images/Gallery11.jpg" alt="Photo"></a></div>
+            <div class=" col-md-6 item"><a href="images/Gallery12.jpg" data-lightbox="photos"><img class="img-fluid"
+                  src="images/Gallery12.jpg" alt="Photo"></a></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer_black gy-3">
+        <div class="container-fluid">
+          <p class="rights">© Eco-Basket. All rights reserved. Developed by Louis, Myrzagul, Liutsiia, Ling</p>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/cad92e1b18.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

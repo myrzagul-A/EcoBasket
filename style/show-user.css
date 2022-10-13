@@ -1,0 +1,23 @@
+#user, #button { 
+  margin: 0 0.2rem;
+  padding: 0;
+  font-weight: bolder;
+  color: rgb(75, 150, 99);
+  
+}
+#user{
+  width: 10rem;
+}
+#button {
+  border: none;
+  background-color: white;
+  width: 7rem;
+}
+
+#weather {
+  margin-left: 1rem;
+  border: none;
+  color: orange;
+  font-weight: bolder;
+  width: 11rem;
+}
